@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html ng-app="app">
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Promise Tutorial</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+  </head>
+
+  <body ng-controller="mainCtrl">
+
+    Hungry: {{hungry}}
+
+    <br><hr>
+
+    <select ng-model="food">
+      <option value="">Nothing</option>
+      <option value="">Garbage</option>
+      <option value="Taco">Taco</option>
+      <option value="Potato">Potato</option>
+      <option value="Burrito">Burrito</option>
+    </select>
+    <button type="button" ng-click='eatFood(food)'>Eat Food</button>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.1/angular.js"></script>
+    <script src="./app.js"></script>
+    <script src="./ctrl.js"></script>
+    <script src="./service.js"></script>
+  </body>
+
+</html>
